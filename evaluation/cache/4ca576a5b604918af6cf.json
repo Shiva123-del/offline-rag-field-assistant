@@ -1,0 +1,7 @@
+{
+ "question": "Do NBC filters protect against carbon monoxide?",
+ "raw": "**Troubleshooting table**\nNo matching table rows.\n\n**Other relevant information**\nNBC filters do not protect against carbon monoxide poisoning. [Manual page 279]\nNBC filters do not decontaminate or neutralize contamination, they only collect and contain it. [Manual page 279]\n\n**Limitations**\nThe table lists possible causes and does not diagnose this specific vehicle or machine. Recommend authorized technical support for repairs.",
+ "latency_s": 10.970437957905233,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:58:10.035700"
+}

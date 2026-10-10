@@ -1,0 +1,7 @@
+{
+ "question": "What is the torque spec for the F-35 landing gear bolts?",
+ "raw": "**Troubleshooting table**\nNo matching table rows.\n\n**Other relevant information**\nNothing relevant.\n\n**Limitations**\nThe excerpts do not establish the torque specification for the F-35 landing gear bolts. The manual does not provide this information. Recommended: Authorized technical support for repairs.",
+ "latency_s": 9.256618457962759,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:59:26.882067"
+}

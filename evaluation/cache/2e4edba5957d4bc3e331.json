@@ -1,0 +1,7 @@
+{
+ "question": "What should I do if the brakes are dragging?",
+ "raw": "**Troubleshooting table**\n\u2022 Cause: All causes -> Action: Notify unit maintenance [Manual page 290]\n\n**Other relevant information**\nNothing relevant.\n\n**Limitations**\nThe troubleshooting table lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs.",
+ "latency_s": 6.525928957969882,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:56:35.990368"
+}

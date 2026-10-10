@@ -1,0 +1,7 @@
+{
+ "question": "How do I change the oil on a Honda Civic?",
+ "raw": "**Troubleshooting table**\nNo matching table rows.\n\n**Other relevant information**\n\u2022 Check oil level with engine off [Manual page 306]\n\u2022 Do not overfill engine crankcase [Manual page 306]\n\u2022 Use only non-vented filler cap [Manual page 306]\n\u2022 Change oil every 3,000 mi (4,827 km), or semiannually, whichever occurs first [Manual page 405]\n\n**Limitations**\nThe manual does not establish a specific procedure for changing the oil on a Honda Civic. The table lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs is necessary.",
+ "latency_s": 12.704652832937427,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:59:39.835410"
+}

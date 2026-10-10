@@ -1,0 +1,7 @@
+{
+ "question": "What protective gear is required when handling winch cable?",
+ "raw": "**Troubleshooting table**\n\u2022 Cause: Handling winch cable without protective gear -> Action: Wear leather gloves when handling winch cable. Do not handle cable with bare hands. [Manual page 4]\n\n**Other relevant information**\n\u2022 Direct all personnel to stand clear of winch cable during winch operation. [Manual page 4]\n\u2022 When fully extending winch cable, ensure that four wraps of winch cable remain on drum at all times. [Manual page 4]\n\n**Limitations**\nThe table only lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs.",
+ "latency_s": 12.222497249953449,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:58:22.751663"
+}

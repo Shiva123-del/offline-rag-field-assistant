@@ -1,0 +1,7 @@
+{
+ "question": "What is the capital of France?",
+ "raw": "**Troubleshooting table**\nNo matching table rows.\n\n**Other relevant information**\nNothing relevant.\n\n**Limitations**\nThe excerpts do not establish the capital of France. The table lists possible causes and does not diagnose this specific vehicle or machine. Recommend authorized technical support for repairs.",
+ "latency_s": 17.030075249960646,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:59:07.794394"
+}

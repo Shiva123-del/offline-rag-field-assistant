@@ -1,0 +1,7 @@
+{
+ "question": "Why does the engine crank but not start?",
+ "raw": "**Troubleshooting table**\n\u2022 Cause: Check to see if fuel gauge indicates \u201cE\u201d (empty) -> Action: Fill fuel tank, and start engine [Manual page 287]\n\u2022 Cause: Other causes -> Action: Notify unit maintenance [Manual page 287]\n\u2022 Cause: Purge fuel system of air (para. 3-10) -> Action: No separate corrective action is listed; follow the step as written [Manual page 287]\n\u2022 Cause: Check to see if WAIT-TO-START lamp assembly fails to light or does not go out -> Action: Notify unit maintenance if wait-to-start lamp assembly fails to light or does not go out [Manual page 287]\n\n**Other relevant information**\nNothing relevant.\n\n**Limitations**\nThe troubleshooting table lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs.",
+ "latency_s": 11.474819415947422,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:56:04.345148"
+}

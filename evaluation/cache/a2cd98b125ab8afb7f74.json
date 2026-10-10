@@ -1,0 +1,7 @@
+{
+ "question": "What are the warnings about exhaust gases?",
+ "raw": "**Troubleshooting table**\n\u2022 Cause: Check oil level for overfilling -> Action: Notify unit maintenance if fluid level is high [Manual page 288]\n\u2022 Cause: Check for restricted air cleaner -> Action: If emergency situation exists, clean air cleaner element (para. 3-15) [Manual page 288]\n\u2022 Cause: Other causes -> Action: Notify unit maintenance [Manual page 288]\n\n**Other relevant information**\n\u2022 Be alert at all times for exhaust odors [Manual page 3]\n\u2022 Be alert for exhaust poisoning symptoms: Headache, Dizziness, Sleepiness, Loss of muscular control [Manual page 3]\n\u2022 Administer artificial respiration, if necessary [Manual page 3]\n\u2022 The field protective mask and ambulance Nuclear-Biological-Chemical (NBC) system will not protect you from exhaust poisoning [Manual page 3]\n\n**Limitations**\nThe table lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs.",
+ "latency_s": 13.696160625084303,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:58:50.433674"
+}

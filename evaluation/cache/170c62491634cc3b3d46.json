@@ -1,0 +1,7 @@
+{
+ "question": "What if the vehicle is not charging according to the voltmeter?",
+ "raw": "**Troubleshooting table**\n\u2022 Cause: Check battery cable connections for looseness, damage, or corrosion -> Action: Notify unit maintenance of any damage to battery cables [Manual page 287]\n\u2022 Cause: Check for broken or missing alternator belts -> Action: Notify unit maintenance if alternator belts are broken or missing [Manual page 287]\n\n**Other relevant information**\nNothing relevant.\n\n**Limitations**\nThe troubleshooting table lists possible causes and does not diagnose this specific vehicle. Recommended authorized technical support for repairs.",
+ "latency_s": 8.85726550000254,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:56:28.528553"
+}

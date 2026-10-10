@@ -1,0 +1,8 @@
+chromadb==1.5.9
+ollama==0.6.3
+sentence-transformers==6.1.0
+pymupdf==1.28.2
+
+# only needed to rebuild the evaluation report and charts
+markdown-it-py
+matplotlib

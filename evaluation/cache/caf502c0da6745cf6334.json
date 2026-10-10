@@ -1,0 +1,7 @@
+{
+ "question": "Why did the winch stop during normal operation?",
+ "raw": "**Troubleshooting table**\n\u2022 Cause: Wait 2 minutes and attempt winch operation again. -> Action: Refer to para. 2-26 for winch operation. [Manual page 291]\n\u2022 Cause: Other causes. -> Action: Notify unit maintenance. [Manual page 291]\n\u2022 Cause: Check to see if voltmeter is in red or yellow (engine not running). -> Action: Start engine and charge batteries. [Manual page 291]\n\u2022 Cause: Check to see if clutch lever is engaged (para. 2-26). -> Action: If not, engage clutch lever. [Manual page 291]\n\u2022 Cause: Electronic current limiter is being activated, indicating an overload condition. -> Action: (No action specified) [Manual page 196]\n\u2022 Cause: Thermal switch is activated, indicating overheating. -> Action: Wait approximately two minutes to let winch cool off and allow thermal switch to reset. [Manual page 196]\n\n**Other relevant information**\n\u2022 Caution: Do not fully apply hand throttle during engine \u201cNO LOAD\u201d [Manual page 196]\n\n**Limitations**\nThe troubleshooting table lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs.",
+ "latency_s": 15.012549165985547,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:57:04.290406"
+}

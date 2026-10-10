@@ -1,0 +1,7 @@
+{
+ "question": "How deep can the vehicle ford water without a deep water fording kit?",
+ "raw": "**Troubleshooting table**\n\u2022 Cause: Water depth unknown -> Action: Never attempt deep water fording [Manual page 213]\n\u2022 Cause: Water depth unknown -> Action: Never attempt shallow water fording [Manual page 210]\n\u2022 Cause: Water depth > 30 in. -> Action: Ford water up to 30 in. without a deep water fording kit [Manual page 210]\n\n**Other relevant information**\n\u2022 Before operation, ensure oil dipstick, transmission dipstick, oil filler cap, and fuel tank cap are secure [Manual page 210]\n\u2022 Never spin wheels when placing vehicle in motion in heavy rain conditions [Manual page 210]\n\n**Limitations**\nThe table lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs.",
+ "latency_s": 14.976995707955211,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:57:44.752296"
+}

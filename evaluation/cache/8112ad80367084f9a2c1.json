@@ -1,0 +1,7 @@
+{
+ "question": "What is the engine horsepower?",
+ "raw": "**Troubleshooting table**\nNo matching table rows.\n\n**Other relevant information**\n\u2022 Engine horsepower is 150 horsepower @ 3600 rpm for the 6.2 L engine [Manual page 44].\n\u2022 Engine horsepower is 160 horsepower @ 3400 rpm for the 6.5 L engine [Manual page 44].\n\n**Limitations**\nThe table lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs.",
+ "latency_s": 14.062599957920611,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:57:29.093567"
+}

@@ -1,0 +1,7 @@
+{
+ "question": "Why is the steering hard?",
+ "raw": "**Troubleshooting table**\n\u2022 Cause: Check tire air pressure -> Action: Inflate or deflate tires to correct air pressure [Manual page 291]\n\u2022 Cause: Check for broken or missing power steering belts -> Action: Notify unit maintenance if belts are broken or missing [Manual page 291]\n\u2022 Cause: Check power steering reservoir for low fluid level -> Action: Add steering fluid (Appendix G) [Manual page 291]\n\u2022 Cause: Check power steering cooler for bent fins or any other air flow obstructions -> Action: Remove obstructions if fins are not damaged. Notify unit maintenance if power steering cooler is damaged [Manual page 291]\n\n**Other relevant information**\nNothing relevant.\n\n**Limitations**\nThe table lists possible causes and does not diagnose this specific vehicle. Recommend authorized technical support for repairs.",
+ "latency_s": 11.921212915913202,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:56:48.355269"
+}

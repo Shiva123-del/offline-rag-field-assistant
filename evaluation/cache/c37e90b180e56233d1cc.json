@@ -1,0 +1,7 @@
+{
+ "question": "What if the transmission dipstick is loose?",
+ "raw": "**Troubleshooting table**\n\u2022 Cause: Transmission dipstick is loose -> Action: Secure dipstick. [Manual page 289]\n\n**Other relevant information**\n\u2022 Pull out dipstick and check for proper transmission fluid level. [Manual page 308]\n\u2022 Do not overfill transmission. [Manual page 308]\n\u2022 Shut off engine and lower and secure hood. [Manual page 308]\n\n**Limitations**\nThe table only lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs is necessary for further diagnosis and repair.",
+ "latency_s": 8.979065917083062,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:57:14.179639"
+}

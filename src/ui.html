@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field Assistant</title>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --panel2: #1c232d; --border: #30363d;
+    --text: #e6edf3; --muted: #9da7b3; --accent: #f5a524; --accent-ink: #1a1200;
+    --ok: #3fb950; --warn: #f0b429; --bad: #ff7b72; --info: #58a6ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  header {
+    border-bottom: 1px solid var(--border); background: var(--panel);
+    padding: 14px 20px; display: flex; align-items: center; gap: 12px;
+  }
+  .logo { width: 36px; height: 36px; border-radius: 9px; background: var(--accent);
+    color: var(--accent-ink); display: grid; place-items: center; font-weight: 800; font-size: 20px; }
+  header h1 { margin: 0; font-size: 18px; }
+  header p { margin: 0; color: var(--muted); font-size: 13px; }
+  .badge { margin-left: auto; font-size: 12px; color: var(--ok); border: 1px solid var(--ok);
+    border-radius: 999px; padding: 3px 10px; white-space: nowrap; }
+  main { max-width: 860px; margin: 0 auto; padding: 20px 16px 140px; }
+  .hint { color: var(--muted); margin: 8px 0 14px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+  .chip { background: var(--panel2); color: var(--text); border: 1px solid var(--border);
+    border-radius: 999px; padding: 8px 14px; font-size: 14px; cursor: pointer; }
+  .chip:hover, .chip:focus-visible { border-color: var(--accent); outline: none; }
+  .msg { margin: 18px 0; }
+  .user { background: var(--panel2); border: 1px solid var(--border); border-radius: 14px;
+    padding: 12px 16px; font-weight: 600; }
+  .bot { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; }
+  .bot h3 { margin: 18px 0 8px; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+  .bot h3:first-child { margin-top: 0; }
+  .bot ul { margin: 0; padding: 0; list-style: none; }
+  .bot li { background: var(--panel2); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+    border-radius: 8px; padding: 10px 12px; margin: 8px 0; }
+  .bot p { margin: 6px 0; color: var(--text); }
+  .lbl { color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+  .page { display: inline-block; background: #12304f; color: #9ccbff; border-radius: 6px;
+    padding: 1px 8px; font-size: 12px; font-weight: 600; margin-left: 4px; white-space: nowrap; }
+  .alert { border-radius: 8px; padding: 9px 12px; margin-top: 12px; font-size: 14px;
+    background: #2b2200; border: 1px solid var(--warn); color: #ffe08a; }
+  details { margin-top: 14px; }
+  summary { cursor: pointer; color: var(--info); font-size: 14px; }
+  .src { border-top: 1px solid var(--border); padding: 8px 0; font-size: 14px; color: var(--muted); }
+  .src b { color: var(--text); }
+  .loading { color: var(--muted); display: flex; align-items: center; gap: 10px; }
+  .spin { width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--accent);
+    border-radius: 50%; animation: s 0.9s linear infinite; }
+  @keyframes s { to { transform: rotate(360deg); } }
+  .error { color: var(--bad); }
+  form { position: fixed; left: 0; right: 0; bottom: 0; background: var(--panel);
+    border-top: 1px solid var(--border); padding: 12px 16px; }
+  .row { max-width: 860px; margin: 0 auto; display: flex; gap: 10px; }
+  input { flex: 1; min-width: 0; background: var(--bg); color: var(--text); border: 1px solid var(--border);
+    border-radius: 10px; padding: 13px 14px; font-size: 16px; }
+  input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+  input::placeholder { color: #7d8793; }
+  button.send { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 10px;
+    padding: 0 22px; font-size: 16px; font-weight: 700; cursor: pointer; }
+  button.send:disabled { opacity: .5; cursor: wait; }
+  .foot { max-width: 860px; margin: 6px auto 0; color: var(--muted); font-size: 12px; }
+  @media (max-width: 520px) { .badge { display: none; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">F</div>
+  <div><h1>Field Assistant</h1><p>__MANUAL__</p></div>
+  <span class="badge">● Offline</span>
+</header>
+
+<main id="main">
+  <p class="hint">Ask about a fault or a procedure. Answers come only from the manual, with page numbers.</p>
+  <div class="chips" id="chips"></div>
+  <div id="chat"></div>
+</main>
+
+<form id="form">
+  <div class="row">
+    <input id="q" placeholder="e.g. Why does the engine crank but not start?" autocomplete="off" maxlength="500" aria-label="Your question" autofocus>
+    <button class="send" id="send">Ask</button>
+  </div>
+  <div class="foot">Possible causes only, not a diagnosis. Page numbers are PDF page numbers. Notify unit maintenance for repairs.</div>
+</form>
+
+<script>
+const EXAMPLES = __EXAMPLES__;
+const chat = document.getElementById("chat"), q = document.getElementById("q"),
+      send = document.getElementById("send"), chips = document.getElementById("chips");
+
+EXAMPLES.forEach(t => {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "chip"; b.textContent = t;
+  b.onclick = () => { q.value = t; ask(); };
+  chips.appendChild(b);
+});
+
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pages = s => esc(s).replace(/\[Manual page (\d+)\]/g, '<span class="page">Page $1</span>');
+
+function render(answer) {
+  let html = "", open = false;
+  for (const line of answer.split("\n")) {
+    const h = line.match(/^\s*\*\*(.+?)\*\*\s*:?\s*$/);
+    if (h) { if (open) html += "</ul>"; open = false; html += `<h3>${esc(h[1])}</h3>`; continue; }
+    if (/^\s*[•*\-]\s+/.test(line)) {
+      if (!open) { html += "<ul>"; open = true; }
+      let t = line.replace(/^\s*[•*\-]\s+/, "");
+      t = pages(t)
+        .replace(/Cause: /g, '<br><span class="lbl">Cause</span> ')
+        .replace(/ -&gt; Action: /g, '<br><span class="lbl">Action</span> ')
+        .replace(/^([^<]*?):\s*<br>/, '<span class="lbl">$1</span><br>');
+      html += `<li>${t}</li>`;
+    } else if (line.trim()) {
+      if (open) { html += "</ul>"; open = false; }
+      html += `<p>${pages(line)}</p>`;
+    }
+  }
+  return html + (open ? "</ul>" : "");
+}
+
+function add(cls, html) {
+  const d = document.createElement("div");
+  d.className = "msg"; d.innerHTML = `<div class="${cls}">${html}</div>`;
+  chat.appendChild(d); d.scrollIntoView({behavior: "smooth", block: "start"});
+  return d;
+}
+
+async function ask() {
+  const question = q.value.trim();
+  if (!question || send.disabled) return;
+  chips.style.display = "none";
+  q.value = ""; send.disabled = true;
+  add("user", esc(question));
+  const wait = add("bot loading", '<div class="spin"></div> Searching the manual and writing an answer…');
+  try {
+    const r = await fetch("/ask", {method: "POST", headers: {"Content-Type": "application/json"},
+                                   body: JSON.stringify({question})});
+    const d = await r.json();
+    wait.remove();
+    if (d.error) { add("bot", `<span class="error">${esc(d.error)}</span>`); return; }
+    let html = render(d.answer);
+    [...d.notes, ...d.warnings].forEach(n => html += `<div class="alert">⚠ ${esc(n)}</div>`);
+    html += `<details><summary>Show manual excerpts used (${d.sources.length})</summary>` +
+      d.sources.map(s => `<div class="src"><b>Page ${s.page}${s.table ? " · troubleshooting table" : ""}</b><br>${esc(s.text)}</div>`).join("") +
+      "</details>";
+    add("bot", html);
+  } catch (e) {
+    wait.remove(); add("bot", '<span class="error">Cannot reach the local server.</span>');
+  } finally { send.disabled = false; q.focus(); }
+}
+document.getElementById("form").onsubmit = e => { e.preventDefault(); ask(); };
+</script>
+</body>
+</html>

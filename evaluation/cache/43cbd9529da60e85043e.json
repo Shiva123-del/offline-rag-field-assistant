@@ -1,0 +1,7 @@
+{
+ "question": "What is the oil capacity of the diesel portable generator?",
+ "raw": "**Troubleshooting table**\nNo matching table rows.\n\n**Other relevant information**\n\u2022 Oil level should be checked every 12,000 mi (19,308 km), or biennially, whichever occurs first. [Manual page 405]\n\u2022 Overfilling the crankcase can result in damage to the engine. [Manual page 405]\n\n**Limitations**\nThe manual does not establish the oil capacity of the diesel portable generator. The table lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs is necessary for accurate diagnosis and repair.",
+ "latency_s": 15.142224541981705,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:59:55.598396"
+}

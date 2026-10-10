@@ -1,0 +1,7 @@
+{
+ "question": "Why is the engine overheating?",
+ "raw": "**Troubleshooting table**\n\u2022 Cause: Check for debris blocking radiator fins -> Action: Remove debris [Manual page 288]\n\u2022 Cause: Allow engine to cool and check for low coolant level -> Action: Add coolant as necessary [Manual page 288]\n\u2022 Cause: Check for broken or missing fan belts -> Action: Notify unit maintenance if belts are broken or missing [Manual page 288]\n\u2022 Cause: Check to see if fan is running -> Action: If fan is not running, perform emergency fan clutch override procedure [Manual page 288]\n\n**Other relevant information**\n\u2022 Stop engine if coolant temperature gauge suddenly increases beyond approximately 230\u00b0F (110\u00b0C) [Manual page 209]\n\u2022 Notify unit maintenance to check differential, T-case, and transmission fluids for \u201coil breakdown\u201d caused by overheating [Manual page 209]\n\n**Limitations**\nThe troubleshooting table lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs.",
+ "latency_s": 14.069115999969654,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:56:19.078868"
+}

@@ -1,0 +1,7 @@
+{
+ "question": "Where is the engine oil dipstick located?",
+ "raw": "**Troubleshooting table**\n\u2022 Engine oil dipstick (on vehicles without deep water fording kit) is located behind alternator on left side of engine and removed to check engine oil level. -> Action: Check engine oil level [Manual page 306].\n\n**Other relevant information**\n\u2022 Engine oil dipstick (on vehicles with deep water fording kit) is located behind alternator on left side of engine and is removed to check engine oil level. [Manual page 62].\n\u2022 Engine oil filler cap is located front center of engine. [Manual page 62].\n\n**Limitations**\nThe table only lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs.",
+ "latency_s": 13.030480042099953,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:58:36.292970"
+}

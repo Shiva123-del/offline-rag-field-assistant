@@ -1,0 +1,12 @@
+# environment and caches
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# rebuilt locally with `python src/ingest.py` (large; backups are machine-specific)
+data/vector_db/
+data/vector_db.backup-*/
+
+# timestamped evaluation runs; the newest one is kept in evaluation/reports/latest/
+evaluation/reports/20*/

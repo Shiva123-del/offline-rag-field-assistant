@@ -1,0 +1,7 @@
+{
+ "question": "How do I slave start the vehicle?",
+ "raw": "**Troubleshooting table**\n\u2022 Cause: Attempt to slave-start vehicle -> Action: No separate corrective action is listed; follow the step as written. [Manual page 287]\n\u2022 Cause: Attempt to slave-start vehicle -> Action: No separate corrective action is listed; follow the step as written. [Manual page 287]\n\n**Other relevant information**\n\u2022 Position slaving vehicle and disabled vehicle close enough for cable hookup. [Manual page 185]\n\u2022 Stop slaving vehicle engine. [Manual page 185]\n\u2022 Ensure all battery cables in disabled vehicle are properly connected before connecting slave cable. [Manual page 185]\n\u2022 Use a twisting motion when installing slave cable to the receptacle. [Manual page 185]\n\u2022 Ensure all electrical switches in both vehicles are turned off. [Manual page 185]\n\u2022 Use a twisting motion when disconnecting slave cable from the receptacle. [Manual page 185]\n\n**Limitations**\nThe troubleshooting table lists possible causes and does not diagnose this specific vehicle or machine. Recommended authorized technical support for repairs.",
+ "latency_s": 13.246839249972254,
+ "model": "llama3.2:latest",
+ "created": "2026-10-10T12:57:58.517449"
+}
