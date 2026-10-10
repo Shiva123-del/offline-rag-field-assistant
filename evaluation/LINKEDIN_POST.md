@@ -14,6 +14,6 @@ After fixing them, checks went from 186/205 to 197/205. Injection resistance 2/3
 
 Limits, stated plainly: a 63-question set is small, only 22 questions go through the model, and I tuned the fixes on the same questions, so a held-out set is next. 8 retrieval checks still fail (rows from neighbouring problems leak into some answers).
 
-Code, golden set and full report on GitHub: [add your link]
+Code, golden set and full report on GitHub: https://github.com/Shiva123-del/offline-rag-field-assistant
 
 #RAG #LLM #GenerativeAI #AIEngineering #Evaluation #Ollama #Python
